@@ -356,6 +356,9 @@ def process_dormitory(dorm_config: dict) -> None:
         telegram_users_str = os.environ.get(f"TELEGRAM_USER_IDS_{buildid}_{roomid}", "").strip()
         telegram_user_ids = telegram_users_str.split() if telegram_users_str else []
 
+        logging.info(f"宿舍 {parsed_config['name']} PushPlus Token: {'已配置' if push_plus_token else '未配置'}")
+        logging.info(f"宿舍 {parsed_config['name']} Telegram: {'已配置' if telegram_bot_token and telegram_user_ids else '未配置'}")
+
         if push_plus_token:
             pushplus(message, push_plus_token)
         if telegram_bot_token and telegram_user_ids:
