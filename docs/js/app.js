@@ -38,8 +38,8 @@ function formatDate(dateStr) {
 // 计算变化量
 function calculateChange(records, index) {
     if (index >= records.length - 1) return null;
-    const current = records[index].kWh;
-    const previous = records[index + 1].kWh;
+    const current = records[index].kwh;
+    const previous = records[index + 1].kwh;
     return current - previous;
 }
 
@@ -112,7 +112,7 @@ function updateChart(records) {
     const ctx = document.getElementById('electricityChart').getContext('2d');
 
     const labels = records.map(r => formatDate(r.time));
-    const data = records.map(r => r.kWh);
+    const data = records.map(r => r.kwh);
 
     if (chart) {
         chart.destroy();
@@ -211,7 +211,7 @@ function updateTable(records) {
         tr.innerHTML = `
             <td>${index + 1}</td>
             <td>${record.time}</td>
-            <td>${record.kWh.toFixed(1)} kWh</td>
+            <td>${record.kwh.toFixed(1)} kWh</td>
             <td class="${changeClass}">${changeText}</td>
         `;
         tbody.appendChild(tr);
