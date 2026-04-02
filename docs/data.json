@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-01",
+  "updated_at": "2026-04-02",
   "dormitories": [
     {
       "id": 1,
@@ -7,12 +7,17 @@
       "buildid": 20,
       "roomid": "528",
       "warning_threshold": 10.0,
-      "latest_kwh": 91.0,
+      "latest_kwh": 85.8,
       "latest_power": null,
       "records": [
         {
           "time": "2026-04-01",
           "kwh": 91.0,
+          "power": null
+        },
+        {
+          "time": "2026-04-02",
+          "kwh": 85.8,
           "power": null
         }
       ],
@@ -24,12 +29,17 @@
       "buildid": 20,
       "roomid": "529",
       "warning_threshold": 10.0,
-      "latest_kwh": 73.0,
+      "latest_kwh": 69.9,
       "latest_power": null,
       "records": [
         {
           "time": "2026-04-01",
           "kwh": 73.0,
+          "power": null
+        },
+        {
+          "time": "2026-04-02",
+          "kwh": 69.9,
           "power": null
         }
       ],
