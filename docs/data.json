@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02",
+  "updated_at": "2026-09-03",
   "dormitories": [
     {
       "id": 1,
@@ -10,11 +10,6 @@
       "latest_kwh": -38.1,
       "latest_power": null,
       "records": [
-        {
-          "time": "2026-08-24",
-          "kwh": -37.3,
-          "power": null
-        },
         {
           "time": "2026-08-25",
           "kwh": -37.3,
@@ -59,6 +54,11 @@
           "time": "2026-09-02",
           "kwh": -38.1,
           "power": null
+        },
+        {
+          "time": "2026-09-03",
+          "kwh": -38.1,
+          "power": null
         }
       ],
       "push_warning_only": false
@@ -72,11 +72,6 @@
       "latest_kwh": -21.6,
       "latest_power": null,
       "records": [
-        {
-          "time": "2026-08-24",
-          "kwh": -19.7,
-          "power": null
-        },
         {
           "time": "2026-08-25",
           "kwh": -20.2,
@@ -119,6 +114,11 @@
         },
         {
           "time": "2026-09-02",
+          "kwh": -21.6,
+          "power": null
+        },
+        {
+          "time": "2026-09-03",
           "kwh": -21.6,
           "power": null
         }
